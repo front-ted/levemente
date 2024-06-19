@@ -44,16 +44,16 @@ pois assim informamos para o print que ele deve subir um diretorio e procurar o 
 */
 let defaultContentLocation = "../"
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
   let location = window.location.href;
   let params = location.split("?")[1].split('&');
   path = params[0].split('=')[1];
-  params.forEach((el) => {    
+  params.forEach((el) => {
     if (el.indexOf('imgpath') != -1)
       imgPath = el.split("=")[1] + '/';
     if (el.indexOf('startpoint') != -1)
       startPoint = el.split("=")[1]
-    else{
+    else {
       startPoint = "index.html";
     }
   })
@@ -64,64 +64,62 @@ window.addEventListener('load', function(){
   recuperarConteudo(path)
 })
 
-function recuperarConteudo(htmlPath){ 
-    //console.log(htmlPath)  
-    console.log('caminho:','../' + htmlPath + '/' + startPoint +' .pagina')
-    $('#ajaxPages').load('../' + htmlPath + '/' + startPoint +' .pagina', function(response, status, xhr){
-        if(status == "success"){
-            //console.log('loaded:', response)
-            $('img').each(function (i, img){
-                //console.log($(img).attr('src'))
-                if($(img).attr('src').indexOf(imgPath) != -1){
-                    $(img).attr('src',defaultContentLocation + htmlPath + '/' +  $(img).attr('src'))
-                }
-            })
-            $('.preloader').fadeOut(150)
+function recuperarConteudo(htmlPath) {
+  //console.log(htmlPath)  
+  console.log('caminho:', '../' + htmlPath + '/' + startPoint + ' .pagina')
+  $('#ajaxPages').load('../' + htmlPath + '/' + startPoint + ' .pagina', function (response, status, xhr) {
+    if (status == "success") {
+      //console.log('loaded:', response)
+      $('img').each(function (i, img) {
+        //console.log($(img).attr('src'))
+        if ($(img).attr('src').indexOf(imgPath) != -1) {
+          $(img).attr('src', defaultContentLocation + htmlPath + '/' + $(img).attr('src'))
         }
-        if(status == "error"){
-            $('.preloader').fadeOut(150)
-            alert('Erro ao carregar o conteudo para impressao. Erro: ' + xhr.status + ':' + xhr.statusText)
-            console.error("Erro:" + xhr.status + ":" + xhr.statusText)
-        }
-    }) 
+      })
+      $('.preloader').fadeOut(150)
+    }
+    if (status == "error") {
+      $('.preloader').fadeOut(150)
+      alert('Erro ao carregar o conteudo para impressao. Erro: ' + xhr.status + ':' + xhr.statusText)
+      console.error("Erro:" + xhr.status + ":" + xhr.statusText)
+    }
+  })
 }
 
-function fontSize(size)
-  {
+function fontSize(size) {
 
-    size = Number(size);
-    switch (size)
-    {
-      case 1:
+  size = Number(size);
+  switch (size) {
+    case 1:
 
-        $("h1").css({"font-size":"26pt "});
-        $("h2").css({"font-size":"24pt "});
-        $("h3").css({"font-size":"22pt "});
-        $("h4").css({"font-size":"20pt "});
-        $("h5").css({"font-size":"18pt "});
-        $("p").css({"font-size":"14pt "});
-        break;
+      $("h1").css({ "font-size": "26pt " });
+      $("h2").css({ "font-size": "24pt " });
+      $("h3").css({ "font-size": "22pt " });
+      $("h4").css({ "font-size": "20pt " });
+      $("h5").css({ "font-size": "18pt " });
+      $("p").css({ "font-size": "14pt " });
+      break;
 
-      case 2:
+    case 2:
 
-          $("h1").css({"font-size":"28pt "});
-          $("h2").css({"font-size":"26pt "});
-          $("h3").css({"font-size":"24pt "});
-          $("h4").css({"font-size":"22pt "});
-          $("h5").css({"font-size":"20pt "});
-          $("p").css({"font-size":"18pt "});
-          break;
+      $("h1").css({ "font-size": "28pt " });
+      $("h2").css({ "font-size": "26pt " });
+      $("h3").css({ "font-size": "24pt " });
+      $("h4").css({ "font-size": "22pt " });
+      $("h5").css({ "font-size": "20pt " });
+      $("p").css({ "font-size": "18pt " });
+      break;
 
-      default:
-          $("h1").css({"font-size":""});
-          $("h2").css({"font-size":""});
-          $("h3").css({"font-size":""});
-          $("h4").css({"font-size":""});
-          $("h5").css({"font-size":""});
-          $("p").css({"font-size":""});
-          break;
-    }
-
-    $("[data-click='fontSize']").removeClass("active");
-    $("[data-click='fontSize'][data-value='"+size+"']").addClass("active");
+    default:
+      $("h1").css({ "font-size": "" });
+      $("h2").css({ "font-size": "" });
+      $("h3").css({ "font-size": "" });
+      $("h4").css({ "font-size": "" });
+      $("h5").css({ "font-size": "" });
+      $("p").css({ "font-size": "" });
+      break;
   }
+
+  $("[data-click='fontSize']").removeClass("active");
+  $("[data-click='fontSize'][data-value='" + size + "']").addClass("active");
+}
