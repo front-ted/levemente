@@ -414,13 +414,13 @@ a.dropdown-item-menu {
 }
 
 .rellax-10 {
-    left: 0px;
+    left: -120px;
     top: 1447px;
 }
 
 .rellax-11 {
-    right: 0px;
-    top: 1168px;
+    right: -13px;
+    top: 1337px;
 }
 
 .rellax-12 {
@@ -429,7 +429,7 @@ a.dropdown-item-menu {
 }
 
 .rellax-13 {
-    right: 0px;
+    right: -150px;
     top: 2197px;
 }
 
@@ -455,7 +455,7 @@ a.dropdown-item-menu {
 
 .rellax-18 {
     top: 1447px;
-    left: 200px;
+    left: 20px;
 }
 
 .rellax-19 {
@@ -654,17 +654,22 @@ h2 {
     }
 
     .rellax-15 {
-        left: 130px;
+        left: -11px;
         top: 1312px;
     }
 
     .rellax-22 {
         top: 1473px;
-        left: 150px;
+        left: 31px;
     }
 }
 
 @media screen and (max-width: 1440px) {
+    .rellax-6 {
+        right: 0px;
+        top: 0px;
+    }
+
     .rellax-7 {
         top: 0px;
         left: 0px;
