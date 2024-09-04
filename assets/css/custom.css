@@ -663,7 +663,12 @@ h2 {
         left: 31px;
     }
 }
-
+@media screen and (max-width: 1670px) {
+    .rellax-6 {
+        right: 25px;
+        top: 1239px;
+    }
+}
 @media screen and (max-width: 1440px) {
     .rellax-6 {
         right: 0px;
