@@ -207,7 +207,8 @@
     background-size: auto, 66px;
     height: 80px;
     border-top: 1px solid #647678;
-    background: url(../images/senac_logo.svg) no-repeat right 5% center #9FBCBF !important;
+    background: url(../images/Logo-Sistema.png) no-repeat right 4% center #9FBCBF !important;
+    padding-top: 99px;
 }
 
 .logopg1 {
@@ -663,12 +664,14 @@ h2 {
         left: 31px;
     }
 }
+
 @media screen and (max-width: 1670px) {
     .rellax-6 {
         right: 25px;
         top: 1239px;
     }
 }
+
 @media screen and (max-width: 1440px) {
     .rellax-6 {
         right: 0px;
@@ -819,6 +822,16 @@ h2 {
 @media (max-width: 600px) {
     .menu {
         display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .topo-logo {
+        background-size: auto, 66px;
+        height: 80px;
+        border-top: 1px solid #647678;
+        background: url(../images/Logo-Sistema_mobile.png) no-repeat right 1% center #9FBCBF !important;
+        padding-top: 99px;
     }
 }
 
