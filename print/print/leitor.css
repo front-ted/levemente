@@ -15,6 +15,11 @@
   all: unset;
 }
 
+.pagina .borda-impresso {
+  border: #000 3px solid !important;
+  padding: 2% !important;
+}
+
 /* VALORES DEFAULT DE TUDO*/
 .pagina a:link {
   color: (internal value);

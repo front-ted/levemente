@@ -13,5 +13,7 @@ jQuery("document").ready(function ($) {
     $("footer").addClass("footer5");
   } else if (pg_number == 6) {
     $("footer").addClass("footer6");
+  } else if (pg_number == 7) {
+    $("footer").addClass("footer7");
   }
 });

@@ -203,6 +203,10 @@
     background-color: #ffffff;
 }
 
+.footer7 {
+    background-color: #a4d4f4;
+}
+
 .topo-logo {
     background-size: auto, 66px;
     height: 80px;
@@ -493,8 +497,27 @@ a.dropdown-item-menu {
     right: 0px;
 }
 
-/* fim imagens flutuantes */
+.rellax-25 {
+    top: 3329px;
+    right: 0px;
+}
 
+.rellax-26 {
+    top: 3329px;
+    right: 0px;
+}
+
+.rellax-27 {
+    top: 3329px;
+    right: 0px;
+}
+
+.rellax-28 {
+    top: 3329px;
+    right: 0px;
+}
+
+/* fim imagens flutuantes */
 h2 {
     color: #0F558A;
 }
@@ -637,6 +660,64 @@ h2 {
 }
 
 /* fim pagina6 */
+/* começo pagina7 */
+.bloco18 {
+    background-image: url('../img/bg_01.png');
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: top !important;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: -1;
+}
+
+.bloco19 {
+    background-image: url('../img/bg_01.png');
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: bottom !important;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.bloco20 {
+    background: #ffffff;
+    position: relative;
+    z-index: -1;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.bloco21 {
+    background-image: url('../img/bg_02.png');
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: bottom !important;
+    margin-top: -50px;
+    /* position: relative;
+    z-index: 1; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* fim pagina7 */
+.bg-podcast.audio {
+    width: 60%;
+}
+
+.bg-podcast.audio {
+    border-color: #fff;
+}
+
+.destaquepg7 {
+    background-color: #e4e4f4;
+    padding: 50px;
+    border-radius: 30px;
+}
+
 @media screen and (max-width: 1920px) {
     .rellax-3 {
         left: 0px;
