@@ -730,12 +730,12 @@ p {
   position: relative !important;
   width: auto !important;
   height: auto !important;
-  padding: initial !important;
+  padding: initial;
   margin: initial !important;
   overflow: visible !important;
   clip: unset !important;
   white-space: normal !important;
-  border: 0 !important;
+  border: 0;
 }
 
 /*painel de abas*/
