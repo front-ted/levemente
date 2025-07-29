@@ -33,15 +33,15 @@
 }
 
 .audio-player .btn-play {
-    background-image: url('../../assets/images/bt_play.svg');
+    background-image: url('../../assets/images/bt_play_neg.svg');
 }
 
 .audio-player .btn-pause {
-    background-image: url('../../assets/images/bg_pause.svg');
+    background-image: url('../../assets/images/bt_pause_neg.svg');
 }
 
 .audio-player .btn-transcricao {
-    background-image: url('../../assets/images/bt_transcricao.svg');
+    background-image: url('../../assets/images/bt_transcricao_neg.svg');
 }
 
 .audio-player .btn-player:active,
@@ -113,14 +113,14 @@
 }
 
 .audio-player input[type=range]::-ms-fill-lower {
-    background: #004684;
+    background: #a4c4cc;
     border: 0px solid #000000;
     border-radius: 0px;
     box-shadow: 0px 0px 0px #000000;
 }
 
 .audio-player input[type=range]::-ms-fill-upper {
-    background: #004684;
+    background: #a4c4cc;
     border: 0px solid #000000;
     border-radius: 0px;
     box-shadow: 0px 0px 0px #000000;
@@ -137,11 +137,11 @@
 }
 
 .audio-player input[type=range]:focus::-ms-fill-lower {
-    background: #004E52;
+    background: #7ca44c;
 }
 
 .audio-player input[type=range]:focus::-ms-fill-upper {
-    background: #004E52;
+    background: #7ca44c;
 }
 
 /*Transcrição de áudios dentro das modais*/
@@ -318,7 +318,7 @@
     min-height: 188px;
     position: relative;
     padding: 10px 20px;
-    border-color: var(--cor-primaria);
+    border-color: #7ca44c;
 }
 
 

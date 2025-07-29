@@ -325,6 +325,13 @@ a.dropdown-item-menu {
     margin-right: 5px;
 }
 
+.bt-menu7 {
+    background: url(../img/menu_bt7.png);
+    height: 183px;
+    width: 143px;
+    margin-right: 5px;
+}
+
 .bt-menu1:hover {
     background: url(../img/menu_bt1_hv.png);
     height: 183px;
@@ -357,6 +364,12 @@ a.dropdown-item-menu {
 
 .bt-menu6:hover {
     background: url(../img/menu_bt6_hv.png);
+    height: 183px;
+    width: 143px;
+}
+
+.bt-menu7:hover {
+    background: url(../img/menu_bt7_hv.png);
     height: 183px;
     width: 143px;
 }
@@ -716,6 +729,18 @@ h2 {
     background-color: #e4e4f4;
     padding: 50px;
     border-radius: 30px;
+}
+
+.bloco21 .modal-header {
+    background: #a4d4f4;
+}
+
+.bloco21 .modal-header h5 {
+    color: #000;
+}
+
+.bloco21 .modal-dialog-centered .modal-content::before {
+    background: none;
 }
 
 @media screen and (max-width: 1920px) {
